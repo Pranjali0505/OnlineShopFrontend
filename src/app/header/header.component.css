@@ -1,0 +1,105 @@
+.form-control{
+   
+    border-radius: 3px;
+    width: 600px;
+    margin-left: 20px;
+}
+.search-icon{
+    position: absolute;
+    z-index: 10;
+    right: 52%;
+    top: 20px;
+    color: blue;
+}
+
+.card-top{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: white;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: .25rem;
+}
+.item img{
+    width: 64px;
+}
+.item{
+    margin: 0px 40px;
+    text-align: center;
+
+}
+.item a:hover{
+    color:blue;
+}
+
+
+.fc{
+    width: 450px;
+   
+}
+.dropd{
+    padding: 20%;
+}
+
+.upper-links {
+    display: inline-block;
+    padding: 0 11px;
+    line-height: 23px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0;
+    color: inherit;
+    border: none;
+    outline: none;
+    font-size: 12px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+    
+}
+
+.dropdown:hover {
+    background-color: #fff;
+}
+
+.dropdown:hover .links {
+    color: #000;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    display: none;
+    background-color: #fff;
+    color: #333;
+    left: 0px;
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 4px 8px -3px #555454;
+    margin: 0;
+  
+}
+
+.list{
+display: inline-flex;
+list-style-type:none;
+padding-left: 0%;
+
+}
+
+.list1{
+    list-style-type:none;
+    padding-left: 0%;
+    
+}
+
+

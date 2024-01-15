@@ -1,0 +1,67 @@
+
+
+<ng-container *ngIf="product.length !=0">
+ 
+  <div class="container">
+    <div class="card-table">
+        <div class="card-product">
+        <table class="table table-responsive">
+        <thead>
+            <tr>
+                <th>Sr.No</th>
+                <th>product_name</th>
+                <th>product_img</th>
+                <th>product_description</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of product; let i= index">
+            <td>{{i+1}}</td>
+            <td>{{item.prod_name}}</td>
+            <td><img  style="width: 100px; "src="http://localhost:2000/{{item.prod_img}}" alt="..."></td>
+            <td>{{item.prod_desc}}</td>
+            <td>{{item.prod_price}}</td>
+            <td>{{item.quantity}}</td>
+            <td>{{item.total}}</td>
+            <td><button (click)="removeItem(item)" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button></td>
+            </tr>
+            <tr>
+                <td colspan="4"></td>
+                <td><button (click)="emptyCart()"class="btn btn-danger">Empty Cart</button></td>
+                <td><button routerLink="/product" class="btn btn-primary">Shop Cart</button></td>
+                <td><button class="btn btn-success">Checkout Cart</button></td>
+                <td><strong>Grand Total :${{grandTotal}}</strong></td>
+                <!-- calculating50%taxes amount -->
+
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    </div>
+  </div>
+</ng-container>
+
+
+
+
+
+
+<ng-container *ngIf="product.length==0">
+    <div class="container">
+        <div class="card">
+            <h5 class="card-title"> My Card</h5>
+            </div>
+     <div class="center">
+        <img src="https://1.bp.blogspot.com/-u5j4_kpAVrU/YGrAv2XBpJI/AAAAAAAABXw/1hPp1-zRwHYevWawZpHNbQFa46NaAPA9gCLcBGAsYHQ/s320/20160609PHT31661_original-removebg-preview.png" alt="">
+        <h4>your cart is empty !</h4>
+        <h6>Add item to it now</h6>
+        <button  routerLink="/product" class="btn btn-primary">shop Now </button>
+        </div>
+        </div>
+
+
+</ng-container>
